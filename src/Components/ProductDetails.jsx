@@ -61,8 +61,9 @@ const ProductDetails = () => {
         >
           <Box
             sx={{
-              width: "50%",
-              height:"75vh",
+              flex: "1",
+              //   width: { sm: "100%", xs: "100%", md: "50%", xl: "50%" },
+              height: "75vh",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -71,17 +72,21 @@ const ProductDetails = () => {
           >
             <Paper
               elevation="5"
-              sx={{ margin: "10px 0px", width:"90%", height:"90%" , 
-              }}
+              sx={{ margin: "10px 0px", width: "90%", height: "90%" }}
             >
-                <img src={ProductDetails?.image || ""} alt="product image" style={{ objectFit: "contain",width:"100%",height:"100%"}}/>
+              <img
+                src={ProductDetails?.image || ""}
+                alt="product image"
+                style={{ objectFit: "contain", width: "100%", height: "100%" }}
+              />
             </Paper>
           </Box>
 
           <Box
             sx={{
-              width: "50%",
-              paddingLeft: "10px",
+              flex: "1",
+            //   width: { sm: "100%", xs: "100%", md: "50%", xl: "50%" },
+            paddingLeft:"10px",
               display: "flex",
               justifyContent: "flex-start",
               alignItems: "flex-start",
