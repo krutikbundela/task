@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import TableComponent from './Components/TableComponent'
 
 function App() {
 
   return (
     <>
-      
+      <TableComponent/>
     </>
   )
 }
